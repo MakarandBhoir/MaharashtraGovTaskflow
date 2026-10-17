@@ -1,0 +1,10 @@
+name: Second Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  simple-job:
+    runs-on: windows-latest
+    steps:
+      - name: run command
+        run: echo "Learning github actions!"
