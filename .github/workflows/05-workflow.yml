@@ -8,9 +8,11 @@ jobs:
     environment:
       name: prod
     
-    steps:
-      - name: run command
+    steps: 
+      - name: Run command
         run: echo "Running command in the prod environment"
+      - name: Print username
         run: echo "Username = ${{ vars.USERNAME }}"
+      - name: Print password
         run: echo "Password = ${{ secrets.PASSWORD }}"
-      
+
