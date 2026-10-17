@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: run command
         run: echo "Running command in the prod environment"
+        run: echo "Username = ${{ vars.USERNAME }}"
+        run: echo "Password = ${{ secrets.PASSWORD }}"
       
